@@ -35,6 +35,7 @@ export default function TodoTable() {
               </IconButton>
             </td>
           </tr>
+          
           <tr>
             <td>2</td>
             <td>Content 2</td>
