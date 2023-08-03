@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 
 // Import components section
 import Add from './components/Add';
+import TodoTable from './components/Table';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Typography variant='h2' sx={{ textAlign: "center", marginTop: "30px" }}>TodoList</Typography>
       
       <Add />
+      <TodoTable />
     </Box>
   );
 }

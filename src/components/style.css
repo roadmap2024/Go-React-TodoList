@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    height: 35px;
+    border-collapse: collapse;
+}
+
+table td {
+    height: 35px;
+    text-align: center;
+}
+
+.m-table {
+    border-collapse: collapse;
+}
