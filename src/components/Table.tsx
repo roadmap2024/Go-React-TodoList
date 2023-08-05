@@ -4,12 +4,26 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
+import axios from 'axios'
 import Pagination from '@mui/material/Pagination';
 
+let endpoint = "http://localhost:8080";
 
 export default function TodoTable() {
   const [currentPage, setCurrentPage] = React.useState<number>(1);
 
+  const [content, setContent] = React.useState<string>();
+
+  React.useEffect(() => {
+    axios.get(endpoint + '/todolist')
+      .then(response => {
+        setContent(response.data);
+        console.log(response.data)
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <div style={{ marginTop: "30px" }}>
