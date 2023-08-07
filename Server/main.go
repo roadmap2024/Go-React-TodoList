@@ -55,7 +55,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	
 	err = client.Ping(context.Background(), nil)
 	if err != nil {
