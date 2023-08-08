@@ -28,6 +28,7 @@ export default function Add() {
                 console.log(error);
             });
     };
+    
     return (
         <Stack direction="row" spacing={8}>
             <TextField onChange={handleChange} sx={{ width: "90%" }} value={content} id="standard-basic" label="Content" variant="outlined" />
