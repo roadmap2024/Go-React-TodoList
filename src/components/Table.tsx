@@ -9,7 +9,7 @@ import Pagination from '@mui/material/Pagination';
 
 let endpoint = "http://localhost:8080";
 
-export default function TodoTable() {
+function TodoTable() {
   const [currentPage, setCurrentPage] = React.useState<number>(1);
 
   const [content, setContent] = React.useState<string>();
@@ -74,3 +74,5 @@ export default function TodoTable() {
     </div>
   );
 }
+
+export default TodoTable;
