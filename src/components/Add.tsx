@@ -7,10 +7,11 @@ import SaveIcon from '@mui/icons-material/Save';
 import Stack from '@mui/material/Stack'
 
 import axios from 'axios';
+import App from '../App';
 
 let endpoint = "http://localhost:8080";
 
-export default function Add() {
+function Add() {
     const [content, setContent] = React.useState<string>('');
 
     const handleChange = (e: any) => {
@@ -36,3 +37,5 @@ export default function Add() {
         </Stack>
     )
 }
+
+export default Add;
